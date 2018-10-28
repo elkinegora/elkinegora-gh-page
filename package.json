@@ -3,11 +3,11 @@
   "version": "1.0.0",
   "description": "So, this is gonna be my personal website, that contains all my personal information, professional experience and some of the projects, that I invented",
   "main": "index.js",
-    "scripts": {
-        "build": "./node_modules/.bin/webpack --mode=production",
-        "start": "npm run build && node server.js --mode=development",
-        "clear": "del-cli dist"
-    },
+  "scripts": {
+    "build": "./node_modules/.bin/webpack --mode=production",
+    "start": "npm run build && node server.js --mode=development",
+    "clear": "del-cli dist"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/elkinegora/elkinegora.github.io.git"
