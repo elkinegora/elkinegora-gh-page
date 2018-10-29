@@ -4,7 +4,7 @@ const path = require('path'),
 
 module.exports = {
     entry: {
-        app: ['./src/app/App.tsx', 'webpack-hot-middleware/client'],
+        app: ['./src/app/ComponentsHandler.tsx', 'webpack-hot-middleware/client'],
         vendor: ['react', 'react-dom']
     },
     output: {
@@ -12,6 +12,7 @@ module.exports = {
         filename: 'js/[name].bundle.js'
     },
     devtool: 'source-map',
+    mode: 'development',
     resolve: {
         extensions: ['.js', '.jsx', '.json', '.ts', '.tsx']
     },
