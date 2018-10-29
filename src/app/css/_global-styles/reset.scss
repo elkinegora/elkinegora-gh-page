@@ -1,44 +1,52 @@
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, font, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    outline: 0;
-    font-weight: inherit;
-    font-style: inherit;
-    font-size: 100%;
-    font-family: inherit;
-    vertical-align: baseline;
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td
+{
+	border: 0;
+	font-size: 100%;
+	font-style: inherit;
+	font-weight: inherit;
+	margin: 0;
+	outline: 0;
+	padding: 0;
+	//font-family: inherit;
+	vertical-align: baseline;
 }
-:focus {
-    outline: 0;
+:focus
+{
+	outline: 0;
 }
-body {
-    line-height: 1;
-    color: black;
-    background: white;
+body
+{
+	background: white;
+	color: black;
+	font-family: 'Open Sans', sans-serif;
+	line-height: 1;
 }
-ol, ul {
-    list-style: none;
+ol, ul
+{
+	list-style: none;
 }
-table {
-    border-collapse: separate;
-    border-spacing: 0;
+table
+{
+	border-collapse: separate;
+	border-spacing: 0;
 }
-caption, th, td {
-    text-align: left;
-    font-weight: normal;
+caption, th, td
+{
+	font-weight: normal;
+	text-align: left;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-    content: "";
+blockquote:before, blockquote:after, q:before, q:after
+{
+	content: '';
 }
-blockquote, q {
-    quotes: "" "";
+blockquote, q
+{
+	quotes: '' '';
+}
+a
+{
+	color: initial;
+	text-decoration: none;
 }

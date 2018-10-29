@@ -1,5 +1,10 @@
-$root-size-px: 16px;
-@function rem ($target, $context: $root-size-px)
+@import 'mixins';
+
+.global
 {
-    @return ($target / $context) * 1rem;
+	&__separator
+	{
+		display: flex;
+		flex-wrap: wrap;
+	}
 }

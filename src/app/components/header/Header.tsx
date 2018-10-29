@@ -14,11 +14,11 @@ export default class Header extends React.Component<any,any> {
         return(
             <header>
                 <div className="header__container global__separator">
-                    <a className="header__logo" href="/" title="Главная">
-                        <span>YO</span>
-                        <span>KING</span>
+                    <a className="header__logo global__separator" href="/" title="Главная">
+                        <span className="header__logo_visual-trick">YO</span>
+                        <span className="header__logo_brick">KING</span>
                     </a>
-                    <a href="#">burger</a>
+                    {/*<a href="#">burger</a>*/}
                 </div>
             </header>
         );
