@@ -1,10 +1,13 @@
-const path = require('path'),
-    webpack = require('webpack'),
-    HtmlWebpackPlugin = require('html-webpack-plugin');
+const
+    path                        = require('path'),
+    webpack                     = require('webpack'),
+    HtmlWebpackPlugin           = require('html-webpack-plugin'),
+    ExtractTextPlugin           = require('extract-text-webpack-plugin'),
+    OptimizeCssAssetsPlugin     = require('optimize-css-assets-webpack-plugin');
 
 module.exports = {
     entry: {
-        app: ['./src/app/ComponentsHandler.tsx', 'webpack-hot-middleware/client'],
+        app: ['./src/app/Main.tsx', 'webpack-hot-middleware/client'],
         vendor: ['react', 'react-dom']
     },
     output: {
@@ -22,11 +25,29 @@ module.exports = {
                 test: /\.(ts|tsx)$/,
                 loader: 'ts-loader'
             },
-            { enforce: "pre", test: /\.js$/, loader: "source-map-loader" }
+            {
+                enforce: "pre",
+                test: /\.js$/,
+                loader: "source-map-loader"
+            },
+            {
+                test:/\.(s*)css$/,
+                use: ExtractTextPlugin.extract({
+                    fallback:'style-loader',
+                    use:['css-loader','sass-loader'],
+                })
+            }
         ]
     },
     plugins: [
         new HtmlWebpackPlugin({ template: path.resolve(__dirname, 'src', 'app', 'index.html') }),
-        new webpack.HotModuleReplacementPlugin()
+        new webpack.HotModuleReplacementPlugin(),
+        new ExtractTextPlugin({filename:'main.css'}),
+        new OptimizeCssAssetsPlugin({
+            assetNameRegExp: /\.css$/g,
+            cssProcessor: require('cssnano'),
+            cssProcessorOptions: { discardComments: { removeAll: true } },
+            canPrint: true
+        }),
     ]
 };
