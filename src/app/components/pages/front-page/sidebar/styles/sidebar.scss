@@ -1,0 +1,76 @@
+@import '../../../../../css/_global-styles/mixins';
+
+.sidebar
+{
+	&__container
+	{
+		background: #000000;
+		bottom: 0;
+		padding: 7.8vh 2.08% 8.7vh 3.12%;
+		position: fixed;
+		right: 0;
+		top: 0;
+		width: 26.3%;
+	}
+	&__inside
+	{
+		height: 100%;
+		overflow: scroll;
+		width: 100%;
+	}
+	&__projects
+	{
+		margin: 0 0 rem(70px);
+		&:last-child
+		{
+			margin: 0;
+		}
+	}
+	&__single-project
+	{
+		background: #FFFFFF;
+		height: 38vh;
+		width: 61.5%;
+		&:hover
+		{
+			.sidebar-project__image
+			{
+				transform: scale(1.1);
+
+				-webkit-filter: grayscale(0);
+				        filter: grayscale(0);
+			}
+		}
+		p
+		{
+			font-size: rem(15px);
+			line-height: 1.4em;
+			padding: 0 5px;
+			text-align: center;
+		}
+	}
+	&-project
+	{
+		&__image-holder
+		{
+			height: calc(100% - 65px);
+			overflow: hidden;
+		}
+		&__title
+		{
+			align-items: center;
+			background: #FFFFFF;
+			height: 65px;
+		}
+		&__image
+		{
+			height: 100%;
+			transform: scale(1);
+			transition: filter 0.5s, -webkit-filter 0.5s, transform 0.5s ease-in-out;
+			width: 100%;
+
+			-webkit-filter: grayscale(100%);
+			        filter: grayscale(100%);
+		}
+	}
+}

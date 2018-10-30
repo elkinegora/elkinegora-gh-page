@@ -1,5 +1,11 @@
 @import '../_global-styles/mixins';
 
+header
+{
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
 .header
 {
 	&__container

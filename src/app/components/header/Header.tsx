@@ -2,14 +2,6 @@ import * as React from "react";
 import "../../css/components/header.scss";
 
 export default class Header extends React.Component<any,any> {
-    constructor(props:any){
-        super(props);
-        this.state = {
-            artistName: "",
-            artistSelected: ""
-        };
-    }
-
     render(){
         return(
             <header>

@@ -4,7 +4,7 @@ import "./css/main.scss";
 import ComponentsHandler from "./components/ComponentsHandler";
 declare let module: any;
 
-ReactDOM.render(<ComponentsHandler compiler="Typescript" framework="React" bundler="Webpack 4" />,
+ReactDOM.render(<ComponentsHandler />,
     document.getElementById('root'));
 
 if (module.hot) {

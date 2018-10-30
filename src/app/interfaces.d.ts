@@ -1,5 +1,4 @@
-interface ComponentsHandlerProps {
-    compiler: string,
-    framework: string,
-    bundler: string
+interface ComponentsHandlerProps {}
+interface FrontPageProps {}
+interface SidebarProps {
 }

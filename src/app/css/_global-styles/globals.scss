@@ -7,4 +7,24 @@
 		display: flex;
 		flex-wrap: wrap;
 	}
+	&__justify
+	{
+		&_start
+		{
+			justify-content: flex-start;
+		}
+		&_end
+		{
+			justify-content: flex-end;
+		}
+		&_center
+		{
+			justify-content: center;
+		}
+	}
+}
+.background-image
+{
+    background: no-repeat center;
+    background-size: cover;
 }
