@@ -1,35 +1,114 @@
-@import "../../../../../../css/_global-styles/mixins";
+@import '../../../../../../css/_global-styles/mixins';
+
 
 .feedback
 {
-    &__container
-    {
-        align-items: center;
-    }
-    h2
-    {
-        font-size: rem(120px);
-        margin: 0 0 rem(70px);
-    }
-    p
-    {
-        font-size: rem(41px);
-        margin: 0 0 70px;
-        span
-        {
-            font-weight: 700;
-            font-size: rem(30px);
-            &:after
-            {
-                content: "";
-                width: rem(544px);
-                height: rem(9px);
-                background: linear-gradient(270deg, $gradient-color__purple, $gradient-color__blue);
-            }
-        }
-        &:last-child
-        {
-            margin: 0;
-        }
-    }
+	&__container
+	{
+		align-items: center;
+		flex-direction: column;
+		height: 100%;
+		h2
+		{
+			font-size: rem(120px);
+			margin: 0 0 rem(70px);
+			span
+			{
+				font-weight: 700;
+				position: relative;
+				&:before
+				{
+					background: #000000;
+					content: '';
+					height: 50px;
+					position: absolute;
+					right: -39px;
+					top: 39px;
+					width: 20px;
+				}
+				&:after
+				{
+					background: #000000;
+					content: '';
+					height: 18px;
+					position: absolute;
+					right: -56px;
+					top: 113px;
+					width: 37px;
+				}
+			}
+		}
+		p
+		{
+			font-size: rem(41px);
+			margin: 0 0 70px;
+			span
+			{
+				align-items: center;
+				flex-direction: column;
+				font-size: rem(30px);
+				font-weight: 700;
+				&:after
+				{
+					background: linear-gradient(270deg, $gradient-color__purple, $gradient-color__blue);
+					content: '';
+					height: rem(9px);
+					margin: rem(23px) 0 0;
+					width: rem(544px);
+				}
+			}
+			&:last-child
+			{
+				margin: 0;
+			}
+		}
+		ul
+		{
+			margin: rem(60px) 0 0;
+			li
+			{
+				margin: 0 rem(25px);
+			}
+			a
+			{
+				align-items: center;
+				display: flex;
+				justify-content: center;
+                opacity: .8;
+                transition: opacity .3s;
+                &:hover
+                {
+                    opacity: 1;
+                    svg
+                    {
+                       transform: scale(1.1);
+                    }
+                    #fb
+                    {
+                        fill: #3B5998;
+                    }
+                    #vk
+                    {
+                        fill: #4c75a3;
+                    }
+                    #ig
+                    {
+                        fill: #4E433C;
+                    }
+                    #in
+                    {
+                        fill: #4875B4;
+                    }
+                }
+			}
+			svg
+			{
+				height: rem(80px);
+				width: rem(80px);
+                transition: fill .3s, transform .3s;
+                transform: scale(1);
+				fill: #000000;
+			}
+		}
+	}
 }
