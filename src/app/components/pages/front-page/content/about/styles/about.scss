@@ -1,6 +1,162 @@
-@import "../../../../../../css/_global-styles/mixins";
+@import '../../../../../../css/_global-styles/mixins';
 
-.about__container
+.about
 {
-    height: 100%;
+	&__container
+	{
+		height: 100%;
+		padding: 14.8vh 6.36% 0 10.6%;
+	}
+	&__title
+	{
+		position: relative;
+		width: 46%;
+		&:before
+		{
+			background: url('../../../../../../images/about.jpg') no-repeat center;
+			background-size: cover;
+			content: '';
+			height: rem(340px);
+			left: 0;
+			opacity: 0.5;
+			position: absolute;
+			top: rem(-50px);
+			width: rem(340px);
+
+			-webkit-filter: grayscale(100%);
+			        filter: grayscale(100%);
+		}
+		h2
+		{
+			flex-direction: column;
+			font-size: rem(70px);
+			line-height: rem(80px);
+			z-index: 1;
+			span
+			{
+				font-weight: 700;
+				position: relative;
+				&:last-child
+				{
+					&:before
+					{
+						background: linear-gradient(90deg, $gradient-color__blue, $gradient-color__purple);
+						bottom: rem(35px);
+						content: '';
+						height: rem(9px);
+						left: rem(-45px);
+						position: absolute;
+						width: rem(416px);
+						z-index: -1;
+					}
+				}
+			}
+		}
+	}
+	&__description
+	{
+		font-size: 23px;
+		line-height: 1.5em;
+		width: 54%;
+		p
+		{
+			margin: 0 0 40px;
+			&:last-child
+			{
+				margin: 0;
+			}
+		}
+	}
+	&__list
+	{
+		margin: 0 0 rem(40px);
+		&:last-child
+		{
+			margin: 0;
+		}
+		&:nth-child(2n)
+		{
+			ul
+			{
+				li
+				{
+					margin: 0;
+				}
+			}
+		}
+		&:nth-child(3n)
+		{
+			ul
+			{
+				display: flex;
+				flex-wrap: wrap;
+				max-width: rem(500px);
+				li
+				{
+					margin: 0;
+					width: 50%;
+				}
+			}
+		}
+		h3
+		{
+			font-size: rem(25px);
+			margin: 0 0 rem(15px);
+		}
+		span
+		{
+			font-weight: 700;
+		}
+		ul
+		{
+			p
+			{
+				margin: 0;
+				width: 100%;
+			}
+			li
+			{
+				align-items: flex-start;
+				display: flex;
+				flex-wrap: wrap;
+				margin: 0 0 rem(15px);
+				padding: 0 0 0 rem(30px);
+				position: relative;
+				&:before
+				{
+					content: '—';
+					left: 0;
+					position: absolute;
+				}
+				&:last-child
+				{
+					margin: 0;
+				}
+			}
+		}
+	}
+	&__skills
+	{
+		&:before
+		{
+			background: url('../../../../../../images/skills.png') left bottom no-repeat;
+			left: auto;
+			right: 0;
+			top: rem(-185px);
+		}
+	}
+}
+.skills
+{
+	&__container
+	{
+		.about__title
+		{
+			width: 39%;
+		}
+		.about__description
+		{
+			width: 61%;
+		}
+	}
 }

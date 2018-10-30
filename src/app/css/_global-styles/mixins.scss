@@ -3,3 +3,6 @@ $root-size-px: 16px;
 {
 	@return ($target / $context) * 1rem;
 }
+
+$gradient-color__purple: #7375d0;
+$gradient-color__blue: #85e8e1;

@@ -3,7 +3,8 @@ const
     webpack                     = require('webpack'),
     HtmlWebpackPlugin           = require('html-webpack-plugin'),
     ExtractTextPlugin           = require('extract-text-webpack-plugin'),
-    OptimizeCssAssetsPlugin     = require('optimize-css-assets-webpack-plugin');
+    OptimizeCssAssetsPlugin     = require('optimize-css-assets-webpack-plugin'),
+    CopyWebpackPlugin           = require('copy-webpack-plugin');
 
 module.exports = {
     entry: {
@@ -36,6 +37,15 @@ module.exports = {
                     fallback:'style-loader',
                     use:['css-loader','sass-loader'],
                 })
+            },
+            {
+                test: /\.(png|jpe?g|gif)$/,
+                loaders: [
+                    {
+                        loader: 'file-loader',
+                        options: {name: '[path][name].[ext]'},
+                    },
+                ]
             }
         ]
     },
@@ -49,5 +59,9 @@ module.exports = {
             cssProcessorOptions: { discardComments: { removeAll: true } },
             canPrint: true
         }),
+        new CopyWebpackPlugin([{
+            from: './src/app/images/',
+            to: './images/'
+        }]),
     ]
 };

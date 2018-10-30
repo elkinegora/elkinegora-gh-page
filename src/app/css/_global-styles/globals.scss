@@ -22,9 +22,16 @@
 			justify-content: center;
 		}
 	}
+	&__align
+	{
+		&_self-center
+		{
+			align-self: center;
+		}
+	}
 }
 .background-image
 {
-    background: no-repeat center;
-    background-size: cover;
+	background: no-repeat center;
+	background-size: cover;
 }

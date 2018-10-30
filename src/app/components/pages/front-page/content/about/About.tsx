@@ -6,15 +6,15 @@ export default class About extends React.Component<any, any>{
         return(
             <section className="frontpage__section">
                 <div className="about__container global__separator">
-                    <div className="about__title">
-                        <h2>
+                    <div className="about__title global__separator global__justify_center">
+                        <h2 className="global__separator">
                             <span>SOME</span>
                             <span>THINGS</span>
                             <span>ABOUT ME</span>
                         </h2>
                     </div>
                     <div className="about__description">
-                        <p>Привет! Меня зовут Егор Ёлкин. Мне 23 года
+                        <p>Привет! Меня зовут Егор Ёлкин. Мне 24 года
                             и я фронтенд разработчик. В данный момент творю и развиваюсь в Челябинске, Россия.</p>
                         <p>За три года аутсорсной деятельности, я понял,
                             что мне интересно развиваться в web-разработке

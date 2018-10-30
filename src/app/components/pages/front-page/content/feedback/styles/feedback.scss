@@ -1,0 +1,35 @@
+@import "../../../../../../css/_global-styles/mixins";
+
+.feedback
+{
+    &__container
+    {
+        align-items: center;
+    }
+    h2
+    {
+        font-size: rem(120px);
+        margin: 0 0 rem(70px);
+    }
+    p
+    {
+        font-size: rem(41px);
+        margin: 0 0 70px;
+        span
+        {
+            font-weight: 700;
+            font-size: rem(30px);
+            &:after
+            {
+                content: "";
+                width: rem(544px);
+                height: rem(9px);
+                background: linear-gradient(270deg, $gradient-color__purple, $gradient-color__blue);
+            }
+        }
+        &:last-child
+        {
+            margin: 0;
+        }
+    }
+}

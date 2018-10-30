@@ -1,4 +1,3 @@
 interface ComponentsHandlerProps {}
 interface FrontPageProps {}
-interface SidebarProps {
-}
+interface SidebarProps {}
