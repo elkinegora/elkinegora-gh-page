@@ -28,6 +28,10 @@
 		{
 			align-self: center;
 		}
+		&_self-start
+		{
+			align-self: flex-start;
+		}
 	}
 }
 .background-image

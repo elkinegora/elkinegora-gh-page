@@ -1,0 +1,64 @@
+@import '../../_global-styles/mixins';
+@media screen and (max-width: 1280px)
+{
+	.sidebar__single-project
+	{
+		width: 80%;
+	}
+	.greetings__title h1
+	{
+		font-size: rem(90px);
+	}
+	.about__title
+	{
+		width: 100%;
+	}
+	.about__description
+	{
+		margin: rem(60px) 0 0 0;
+		padding: 0;
+		width: 100%;
+	}
+	.skills__container
+	{
+		flex-direction: column-reverse;
+		.about__description
+		{
+			width: 100%;
+		}
+		.about__title
+		{
+			width: 100%;
+		}
+	}
+	.about__skills:before
+	{
+		top: rem(-20px);
+	}
+	.feedback__container
+	{
+		h2
+		{
+			font-size: rem(100px);
+			span
+			{
+				&:before
+				{
+					height: rem(45px);
+					right: rem(-35px);
+					top: rem(33px);
+					width: rem(16px);
+				}
+				&:after
+				{
+					height: rem(16px);
+					top: rem(93px);
+				}
+			}
+		}
+		p
+		{
+			font-size: rem(32px);
+		}
+	}
+}

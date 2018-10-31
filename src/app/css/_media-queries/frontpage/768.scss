@@ -1,0 +1,11 @@
+@media screen and (max-width: 767px)
+{
+	html
+	{
+		font-size: rem(13px);
+	}
+	.about__list:nth-child(3n) ul li
+	{
+		width: 38%;
+	}
+}

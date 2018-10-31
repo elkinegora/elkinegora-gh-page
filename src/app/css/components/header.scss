@@ -5,6 +5,7 @@ header
 	position: fixed;
 	top: 0;
 	width: 100%;
+	z-index: 2;
 }
 .header
 {
@@ -26,7 +27,7 @@ header
 			{
 				&:before
 				{
-					height: 17px;
+					height: rem(17px);
 				}
 			}
 			.header__logo_brick
@@ -45,23 +46,23 @@ header
 			{
 				background: #000000;
 				content: '';
-				height: 13px;
-				left: 39px;
+				height: rem(13px);
+				left: rem(39px);
 				position: absolute;
-				top: 5px;
+				top: rem(5px);
 				transition: height 0.5s;
-				width: 4px;
+				width: rem(4px);
 				z-index: 1;
 			}
 			&:after
 			{
 				background: #000000;
 				content: '';
-				height: 4px;
-				left: 39px;
+				height: rem(4px);
+				left: rem(39px);
 				position: absolute;
-				top: 22px;
-				width: 13px;
+				top: rem(22px);
+				width: rem(13px);
 				z-index: 1;
 			}
 		}
@@ -72,14 +73,14 @@ header
 			{
 				background: linear-gradient(to right, #7F7FD5, #91EAE4);
 				content: '';
-				height: 5px;
+				height: rem(5px);
 				opacity: 1;
 				position: absolute;
-				right: -2px;
-				top: 13px;
+				right: rem(-2px);
+				top: rem(13px);
 				transform: rotate(0deg);
 				transition: transform 0.5s, opacity 0.5s;
-				width: 26px;
+				width: rem(26px);
 				z-index: 1;
 			}
 		}

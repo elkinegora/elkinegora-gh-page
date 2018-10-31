@@ -1,0 +1,57 @@
+@media screen and (max-width: 1023px)
+{
+	.header__container
+	{
+		padding: 0 rem(12px);
+	}
+	.greetings__container
+	{
+		padding: 0 0 0 rem(30px);
+	}
+	.sidebar__single-project
+	{
+		width: 100%;
+	}
+	.sidebar__projects
+	{
+		margin: 0 0 rem(40px);
+	}
+	.greetings__title h1
+	{
+		font-size: rem(70px);
+		line-height: 1.5em;
+		margin: rem(180px) 0 rem(140px);
+	}
+	.greetings__socials a
+	{
+		padding: rem(10px);
+	}
+	.about__container
+	{
+		padding: rem(80px) rem(30px);
+	}
+	.about__description
+	{
+		margin: rem(100px) 0 0;
+	}
+	.about__skills:before
+	{
+		top: rem(-70px);
+	}
+	.feedback__container
+	{
+		margin: rem(80px) 0;
+		p
+		{
+			font-size: rem(24px);
+			span:after
+			{
+				width: rem(500px);
+			}
+		}
+	}
+	.about__list:nth-child(3n) ul li
+	{
+		width: 44%;
+	}
+}

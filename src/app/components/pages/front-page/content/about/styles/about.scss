@@ -4,11 +4,13 @@
 {
 	&__container
 	{
+		align-items: center;
 		height: 100%;
 		padding: 14.8vh 6.36% 0 10.6%;
 	}
 	&__title
 	{
+		margin: rem(100px) 0 0;
 		position: relative;
 		width: 46%;
 		&:before
@@ -139,7 +141,7 @@
 	{
 		&:before
 		{
-			background: url('../../../../../../images/skills.png') left bottom no-repeat;
+			background: url('../../../../../../images/skills.png') left bottom no-repeat / cover;
 			left: auto;
 			right: 0;
 			top: rem(-185px);
@@ -152,6 +154,7 @@
 	{
 		.about__title
 		{
+			margin: 0;
 			width: 39%;
 		}
 		.about__description

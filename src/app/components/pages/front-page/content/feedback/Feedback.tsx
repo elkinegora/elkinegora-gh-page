@@ -8,7 +8,7 @@ export default class Feedback extends React.Component<any, any>{
                 <div className="feedback__container global__separator global__justify_center">
                     <h2><span>SAY YO</span></h2>
                     <p>Есть интересный проект? Я готов обсудить.</p>
-                    <p><span className="global__separator">ВЫШЛИ ЦИФРОВОГО ГОЛУБЯ</span></p>
+                    <p><a href="mailto:egor.yelkin@gmail.com" title="Отправить сообщение"><span className="global__separator">ВЫШЛИ ЦИФРОВОГО ГОЛУБЯ</span></a></p>
                     <div className="feedback__socials">
                         <ul className="global__separator">
                             <li>

@@ -1,0 +1,45 @@
+@import '../../_global-styles/mixins';
+@media screen and (max-width: 1400px)
+{
+	.frontpage__section
+	{
+		height: auto;
+	}
+	.greetings__title h1
+	{
+		margin: rem(180px) 0;
+	}
+	.about__description
+	{
+		font-size: rem(20px);
+		padding-left: rem(20px);
+		p
+		{
+			margin: 0 0 rem(30px);
+		}
+	}
+	.skills__container .about__description
+	{
+		padding: 0;
+	}
+	.about__title
+	{
+		margin: 0;
+		h2
+		{
+			font-size: rem(60px);
+			span:last-child:before
+			{
+				width: rem(390px);
+			}
+		}
+	}
+	.about__skills
+	{
+		justify-content: center;
+	}
+	.feedback__container
+	{
+		margin: rem(140px) 0;
+	}
+}

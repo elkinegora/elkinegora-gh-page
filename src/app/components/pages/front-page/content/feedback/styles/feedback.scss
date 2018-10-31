@@ -1,6 +1,5 @@
 @import '../../../../../../css/_global-styles/mixins';
 
-
 .feedback
 {
 	&__container
@@ -12,6 +11,7 @@
 		{
 			font-size: rem(120px);
 			margin: 0 0 rem(70px);
+			padding-right: rem(57px);
 			span
 			{
 				font-weight: 700;
@@ -20,28 +20,28 @@
 				{
 					background: #000000;
 					content: '';
-					height: 50px;
+					height: rem(50px);
 					position: absolute;
-					right: -39px;
-					top: 39px;
-					width: 20px;
+					right: rem(-39px);
+					top: rem(39px);
+					width: rem(20px);
 				}
 				&:after
 				{
 					background: #000000;
 					content: '';
-					height: 18px;
+					height: rem(18px);
 					position: absolute;
-					right: -56px;
-					top: 113px;
-					width: 37px;
+					right: rem(-56px);
+					top: rem(113px);
+					width: rem(37px);
 				}
 			}
 		}
 		p
 		{
 			font-size: rem(41px);
-			margin: 0 0 70px;
+			margin: 0 0 rem(70px);
 			span
 			{
 				align-items: center;
@@ -64,7 +64,6 @@
 		}
 		ul
 		{
-			margin: rem(60px) 0 0;
 			li
 			{
 				margin: 0 rem(25px);
@@ -74,39 +73,37 @@
 				align-items: center;
 				display: flex;
 				justify-content: center;
-                opacity: .8;
-                transition: opacity .3s;
-                &:hover
-                {
-                    opacity: 1;
-                    svg
-                    {
-                       transform: scale(1.1);
-                    }
-                    #fb
-                    {
-                        fill: #3B5998;
-                    }
-                    #vk
-                    {
-                        fill: #4c75a3;
-                    }
-                    #ig
-                    {
-                        fill: #4E433C;
-                    }
-                    #in
-                    {
-                        fill: #4875B4;
-                    }
-                }
+				&:hover
+				{
+					svg
+					{
+						transform: scale(1.1);
+					}
+					#fb
+					{
+						fill: #3B5998;
+					}
+					#vk
+					{
+						fill: #4C75A3;
+					}
+					#ig
+					{
+						fill: #4E433C;
+					}
+					#in
+					{
+						fill: #4875B4;
+					}
+				}
 			}
 			svg
 			{
 				height: rem(80px);
+				transform: scale(1);
+				transition: fill 0.3s, transform 0.3s;
 				width: rem(80px);
-                transition: fill .3s, transform .3s;
-                transform: scale(1);
+
 				fill: #000000;
 			}
 		}

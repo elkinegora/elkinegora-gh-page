@@ -1,0 +1,97 @@
+@media screen and (max-width: 414px)
+{
+	p
+	{
+		line-height: 1.5em;
+	}
+	.greetings__container
+	{
+		padding: 0 1.875rem;
+	}
+	.greetings__title h1
+	{
+		font-size: 3.175rem;
+		margin: 7.25rem 0 2rem;
+	}
+	.greetings__socials
+	{
+		height: auto;
+		ul li
+		{
+			line-height: 1.5em;
+		}
+	}
+	.about__container
+	{
+		padding: 4rem 1.875rem;
+	}
+	.about__title
+	{
+		&:before
+		{
+			width: 100%;
+		}
+		h2 span:last-child:before
+		{
+			left: -1.9125rem;
+			width: 22.875rem;
+		}
+	}
+	.about__description p
+	{
+		text-align: justify;
+	}
+	.about__skills h2 span:last-child:before
+	{
+		left: 0.0875rem;
+		width: 22.975rem;
+	}
+	.feedback__container
+	{
+		margin: 2rem 0;
+		padding: 0 20px;
+		h2
+		{
+			font-size: 4rem;
+			padding-right: 1.8rem;
+			span
+			{
+				&:before
+				{
+					height: 1.7125rem;
+					right: -1.1875rem;
+					top: 1.3625rem;
+					width: 0.6rem;
+				}
+				&:after
+				{
+					height: 0.6rem;
+					right: -1.7rem;
+					top: 3.7125rem;
+					width: 1.1rem;
+				}
+			}
+		}
+		p
+		{
+			margin: 0 0 2rem;
+			text-align: center;
+			span
+			{
+				font-size: 1.475rem;
+				&:after
+				{
+					width: 22.25rem;
+				}
+			}
+		}
+		ul li
+		{
+			margin: 0 5px;
+		}
+	}
+	.about__list:nth-child(3n) ul li
+	{
+		width: 100%;
+	}
+}

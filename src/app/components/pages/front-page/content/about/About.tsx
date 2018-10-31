@@ -6,7 +6,7 @@ export default class About extends React.Component<any, any>{
         return(
             <section className="frontpage__section">
                 <div className="about__container global__separator">
-                    <div className="about__title global__separator global__justify_center">
+                    <div className="about__title global__separator global__justify_center global__align_self-start">
                         <h2 className="global__separator">
                             <span>SOME</span>
                             <span>THINGS</span>

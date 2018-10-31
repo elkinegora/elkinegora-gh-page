@@ -14,7 +14,7 @@
 		h1
 		{
 			flex-direction: column;
-			font-size: 100px;
+			font-size: rem(100px);
 			line-height: rem(110px);
 			span
 			{
@@ -25,6 +25,7 @@
 	&__socials
 	{
 		align-items: center;
+		display: flex;
 		height: 60px;
 		margin: 0 0 rem(30px);
 		ul
