@@ -8,10 +8,14 @@
 	{
 		padding: 0 1.875rem;
 	}
-	.greetings__title h1
+	.greetings__title
 	{
-		font-size: 3.175rem;
-		margin: 7.25rem 0 2rem;
+		min-height: calc(100vh - 86px);
+		h1
+		{
+			font-size: 3.175rem;
+			margin: 7.25rem 0 2rem;
+		}
 	}
 	.greetings__socials
 	{
@@ -23,7 +27,7 @@
 	}
 	.about__container
 	{
-		padding: 4rem 1.875rem;
+		padding: 0 1.875rem;
 	}
 	.about__title
 	{
@@ -43,12 +47,11 @@
 	}
 	.about__skills h2 span:last-child:before
 	{
-		left: 0.0875rem;
+		left: -2.5rem;
 		width: 22.975rem;
 	}
 	.feedback__container
 	{
-		margin: 2rem 0;
 		padding: 0 20px;
 		h2
 		{

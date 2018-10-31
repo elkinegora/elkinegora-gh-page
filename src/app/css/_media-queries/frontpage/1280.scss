@@ -11,11 +11,12 @@
 	}
 	.about__title
 	{
+		align-self: center;
+		margin: 3.125rem 0 4.5rem;
 		width: 100%;
 	}
 	.about__description
 	{
-		margin: rem(60px) 0 0 0;
 		padding: 0;
 		width: 100%;
 	}
@@ -28,12 +29,14 @@
 		}
 		.about__title
 		{
+			margin: 0 0 4rem;
 			width: 100%;
 		}
 	}
 	.about__skills:before
 	{
-		top: rem(-20px);
+		right: 0;
+		top: rem(-40px);
 	}
 	.feedback__container
 	{

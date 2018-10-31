@@ -5,12 +5,12 @@
 	&__container
 	{
 		align-items: center;
-		height: 100%;
-		padding: 14.8vh 6.36% 0 10.6%;
+		min-height: calc(100vh - 80px);
+		padding: 0 6.36% 0 10.6%;
 	}
 	&__title
 	{
-		margin: rem(100px) 0 0;
+		margin: rem(50px) 0 0;
 		position: relative;
 		width: 46%;
 		&:before

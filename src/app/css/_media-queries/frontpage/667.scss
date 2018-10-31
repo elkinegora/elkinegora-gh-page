@@ -12,8 +12,28 @@
 	{
 		font-size: 12px;
 	}
-	.greetings__socials a
+	.greetings__title
 	{
-		padding: 0.4rem;
+		min-height: calc(100vh - 70px);
+	}
+	.greetings__socials
+	{
+		height: 30px;
+		a
+		{
+			padding: 0.4rem;
+		}
+	}
+	.frontpage__section
+	{
+		padding: 20px 0;
+	}
+	.greetings__container
+	{
+		min-height: calc(100vh - 40px);
+	}
+	.feedback__container
+	{
+		min-height: calc(100vh - 40px);
 	}
 }

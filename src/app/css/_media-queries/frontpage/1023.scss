@@ -20,7 +20,6 @@
 	{
 		font-size: rem(70px);
 		line-height: 1.5em;
-		margin: rem(180px) 0 rem(140px);
 	}
 	.greetings__socials a
 	{
@@ -28,11 +27,7 @@
 	}
 	.about__container
 	{
-		padding: rem(80px) rem(30px);
-	}
-	.about__description
-	{
-		margin: rem(100px) 0 0;
+		padding: 0 rem(30px);
 	}
 	.about__skills:before
 	{
@@ -40,7 +35,6 @@
 	}
 	.feedback__container
 	{
-		margin: rem(80px) 0;
 		p
 		{
 			font-size: rem(24px);
@@ -53,5 +47,9 @@
 	.about__list:nth-child(3n) ul li
 	{
 		width: 44%;
+	}
+	.skills__container .about__title
+	{
+		margin: 4rem 0;
 	}
 }

@@ -5,10 +5,6 @@
 	{
 		height: auto;
 	}
-	.greetings__title h1
-	{
-		margin: rem(180px) 0;
-	}
 	.about__description
 	{
 		font-size: rem(20px);
@@ -24,7 +20,6 @@
 	}
 	.about__title
 	{
-		margin: 0;
 		h2
 		{
 			font-size: rem(60px);
@@ -37,9 +32,9 @@
 	.about__skills
 	{
 		justify-content: center;
-	}
-	.feedback__container
-	{
-		margin: rem(140px) 0;
+		&:before
+		{
+			right: rem(-25px);
+		}
 	}
 }
